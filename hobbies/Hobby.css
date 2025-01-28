@@ -1,0 +1,17 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: beige;
+}
+.Components1, .Components2, .Components3{
+    width: 400px;
+    height: 250px;
+}
+
+.Components4{
+    width: 450px;
+    height: 300px;
+}
+
+.Components5{
+    width: 450px;
+}
