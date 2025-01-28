@@ -1,0 +1,32 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    /*padding: 0;
+    margin: 0;
+    border: 10px;
+    box-sizing: content;*/
+}
+
+h1{
+    margin: auto;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    gap: 5em; /*gap between each flex boxes*/
+    /*flex: 1 1 auto;*/
+    /*    flex-grow: 1 (the item will grow if there's extra space).
+
+    flex-shrink: 1 (the item will shrink if there's not enough space).
+
+    flex-basis: auto (the item's base size is determined by its content).*/
+    justify-content: space-evenly;
+}
+
+/*.item1{
+    flex:1;
+}
+.item2{
+    flex:2;
+}
+*/
