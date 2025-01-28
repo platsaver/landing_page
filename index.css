@@ -1,4 +1,13 @@
 *{
     font-family: 'Times New Roman', Times, serif;
-    padding: auto;
+    padding: 0px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 40px;
+}
+ul{
+    font-size: 30px;
 }

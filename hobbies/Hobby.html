@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="Hobby.css">
         <!--Javascript required-->
         <script>
-            function showComponent() {
+            function showOptions() {
                 var selectedValue = document.getElementById("way").value;
                 document.getElementById("Components").style.display = "none";
                 document.getElementById("Switch Type").style.display = "none";
@@ -21,7 +21,7 @@
             }
             window.onload = function(){
                 document.getElementById("way").value = "Select one";
-                showComponent();
+                showOptions();
             }
         </script>
         <style>
@@ -35,7 +35,7 @@
     <body>
         <h1>Keyboard</h1>
         <label for="way">What you want to know:</label>
-        <select name="way" id="way" onchange="showComponent()">
+        <select name="way" id="way" onchange="showOptions()">
             <option value="Select one" selected>--Select one--</option>
             <option value="Components">Components</option>
             <option value="Switch Type">Switch Type</option>
