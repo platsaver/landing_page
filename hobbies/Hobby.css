@@ -1,10 +1,27 @@
 *{
     font-family: 'Times New Roman', Times, serif;
     background-color: beige;
+    font-size: 24px;
 }
+
+#title{
+    font-size:40px;
+}
+#question{
+    font-size: 26px;
+}
+#container1, #container2, #container3{
+    display: flex; 
+    gap: 2em;
+}
+
 .Components1, .Components2, .Components3{
-    width: 400px;
-    height: 250px;
+    width: 550px;
+    height: 340px;
+}
+
+.Components2{
+    width: 590px;
 }
 
 .Components4{
@@ -14,4 +31,18 @@
 
 .Components5{
     width: 450px;
+}
+
+.top, .gasket, .gummy{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.coms{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+span{
+    color: red;
 }

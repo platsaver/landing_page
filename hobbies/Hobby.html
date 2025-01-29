@@ -33,8 +33,8 @@
         <!--Enable to make sure only when the choice is pressed, the content will show up-->
     </head>
     <body>
-        <h1>Keyboard</h1>
-        <label for="way">What you want to know:</label>
+        <h1 id="title">Keyboard</h1>
+        <label for="way" id="question">What you want to know:</label>
         <select name="way" id="way" onchange="showOptions()">
             <option value="Select one" selected>--Select one--</option>
             <option value="Components">Components</option>
@@ -44,20 +44,20 @@
         <div id="Components">
             <h2>There are main components in a keyboard:</h2>
             <ol>
-                <li>Case</li>
+                <li class="coms">Case</li>
                     <p>This is the component that contains all other components</p>
                     <img class="Components1" src="DSC06405_Large_3e4c166f-64f8-4f84-9c24-f8511c115ca2.webp">
-                <li>Plate</li>
+                <li class="coms">Plate</li>
                     <p>This is the component used for holding switch straight</p>
                     <p>This component is optional (sometime) due to the way people build.</p>
                     <img class="Components2" src="custom_plate_for_unikorn60_by__1715429026_01b77c9a-919813573.jpeg">
-                <li>Switch</li>
+                <li class="coms">Switch</li>
                     <p>This is the part that mostly contributes the sound and feel of the keyboard.</p>
                     <p>This will be soldered into the component called PCB.</p>
                     <img class="Components3" src="NK_Cream_720x@2x-1031956094.jpg">
                     <p>The switch after soldered into the PCB:</p>
                     <img class="Components4" src="xVjVDn5.jpg">
-                <li>PCB</li>
+                <li class="coms">PCB</li>
                     <p>Printed Circuit Board. This is the components that switch will be soldered into.</p>
                     <p>Switch will create electro static into the PCB. The PCB after receiving signal, send it to the computer to display the letter</p>
                     <p>For example, when you type P. The switch leaf will move, causing signal to the solder joint on the PCB.</p>
@@ -69,27 +69,44 @@
             <h2>There are many keyboard switches on the market right now than in the pre 2019.</h2>
             <h2>But they mostly fall into 3 main categories: Clicky, Tactile and Linear.</h2>
             <ol>
-                <li>Clicky</li>
-                    <p>This switch may be the switch that most beginners try at the first time.</p>
-                    <p>This provides the most satisfied audible click, which is pretty obvious when compared to a membrance keyboard.</p>
-                    <p>How clicky switch works visually:</p>
+                <div id="container1">
+                    <div>
+                        <li>Clicky</li>
+                            <p>This switch may be the switch that most beginners try at the first time.</p>
+                            <p>This provides the most satisfied <span>audible click</span>, which is pretty obvious when compared to a membrance keyboard.</p>
+                            <p>How clicky switch works visually:</p>
+                    </div>
+                    <div>
                         <img src="clicky.gif">
-                <li>Tactile</li>
-                    <p>The origin of this switch comes from the request of client called Kinesis.</p>
-                    <p>They requested cherry(a father of MX-style switch) makes a switch that similar to the blue but doesn't have click.</p>
-                    <p>How tactile switch works visually:</p>
+                    </div>
+                </div>
+                <div id="container2">
+                    <div>
+                        <li>Tactile</li>
+                            <p>The origin of this switch comes from the request of client called Kinesis.</p>
+                            <p>They requested cherry(a father of MX-style switch) makes a switch that <span>similar to the blue but doesn't have click</span>.</p>
+                            <p>How tactile switch works visually:</p>
+                    </div>
+                    <div>
                         <img src="tactile.gif">
-                <li>Linear</li>
-                    <p>This is the switch type that flooded the market right now.</p>
-                    <p>The switch provide a smooth, uninterrupted typing experience, which is opposite to the clicky and tactile switch.</p>
-                    <p>How linear switch works visually:</p>
+                    </div>
+                </div>
+                <div id="container3">
+                    <div>
+                        <li>Linear</li>
+                            <p>This is the switch type that flooded the market right now.</p>
+                            <p>The switch provide a smooth, uninterrupted typing experience, which is <span>opposite to the clicky and tactile switch</span>.</p>
+                            <p>How linear switch works visually:</p>
+                    </div>
+                    <div>
                         <img src="linear.gif">
+                    </div>
             </ol>
         </div>
         <div id="Mounting Style">
             <h2>I will just put most popular mounting methods here:</h2>
             <ol>
-                <li>Top mount</li>
+                <li class="top">Top mount</li>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl1L9s-D9JtXVCtT-2n7LBq5_g8ZT9S9vNRg&s">
                     <p>This mounting method performed by screwing the plate to the top frame of the case.</p>
                         <p>Pros:</p>
@@ -102,7 +119,7 @@
                             <li>If not executed well, the sound will be really ass</li>
                             <li>Really stiff, which is not suitable to people prefering soft typing experience.</li>
                         </ol>
-                <li>Gasket mount</li>
+                <li class="gasket">Gasket mount</li>
                     <img src="https://cdn.shopify.com/s/files/1/0012/4957/4961/files/Gasket_Mount_Keyboards_2.png?v=1703669931">
                     <p>This mounting method has it core function: Isolated plate and pcb from the case.</p>
                     <p>It can be executed through foam strip, gummy oring, oring on the standoff, ...</p>
@@ -116,7 +133,7 @@
                         <ol>
                             <li>If not executed well, sound can be muted. This depends on people's taste, doesn't neccessarily a cons.</li>
                         </ol>
-                <li>Gummy O'ring gasket mount</li>
+                <li class="gummy">Gummy O'ring gasket mount</li>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-E_ui1AYlhAViPmzYIEXyaMcdxB5WSQfCRg&s">
                     <p>Same as gummy oring, which is isolated pcb,plate from case using a large oring wrapped around the gap between pcb and plate.</p>
                         <p>Pros:</p>

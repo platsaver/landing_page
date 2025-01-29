@@ -3,6 +3,11 @@
     padding: 0px;
     margin: 10px;
     box-sizing: border-box;
+    background-color: lightgray;
+}
+
+a:hover{
+    color: red;
 }
 
 h1{
