@@ -1,0 +1,18 @@
+*{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 24px;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.home1,.countryside1{
+    height: 300px;
+}
+
+.countryside2,.neighborhood{
+    height: 300px;
+}
+
+.countryside2#new1{
+    width: 300px
+}
