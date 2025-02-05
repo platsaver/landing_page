@@ -3,9 +3,40 @@
     font-size: 40px;
     box-sizing: border-box;
     margin: 10px;
-    background-color: #988357;
+    background-color: #FFFFF0;
+}
+/*--------Filter buttons------------*/
+label{
+    font-size: 30px;
 }
 
+#imageFilter {
+    font-size: 30px; /* Match label size */
+    padding: 5px 15px; /* Increase padding */
+    border-radius: 5px;
+}
+/*-------------*--------------*/
+
+/*------------- Image slightly bigger when hovered ------------*/
+.container1 div {
+    display: flex;
+    flex-wrap: wrap; /* Allows images to move to the next line if needed */
+    gap: 10px; /* Space between images */
+}
+.container1{
+    overflow: hidden;
+}
+
+.container1 img{
+    object-fit: cover;
+    transition: transform 400ms;
+}
+
+.container1 img:hover{
+    transform: scale(1.1);
+}
+
+/* -------------*------------ */
 .home1,.countryside1{
     height: 300px;
 }
@@ -16,4 +47,8 @@
 
 .countryside2#new1{
     width: 300px
+}
+
+* img{
+    border-radius: 0.5rem;
 }
